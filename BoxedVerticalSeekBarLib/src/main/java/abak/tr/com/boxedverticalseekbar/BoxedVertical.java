@@ -226,7 +226,7 @@ public class BoxedVertical extends View{
         }
     }
 
-    private void drawText(Canvas canvas, Paint paint, String text) {
+    protected void drawText(Canvas canvas, Paint paint, String text) {
         canvas.getClipBounds(dRect);
         int cWidth = dRect.width();
         paint.setTextAlign(Paint.Align.LEFT);
